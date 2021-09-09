@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>The Cube</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+</head>
+<div id="announcement">
+    <ul>
+        <li id="message">30-Night Sleep Trial</li>
+    </ul>
+</div>
+<body id="background">
+<nav class="navbar navbar-expand-lg sticky-top navbar-light" id="navbar">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto" id="nav-item">
+      <li class="nav-item">
+        <li class="nav-item ">
+          <a class="nav-link">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Explore</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Blog</a>
+        </li>
+      </ul>
+      </div>
+      <div id="chill">
+      <a class="navbar-brand" href="../index.html"><img class ="img-responsive" src="./images/chill.png" id="logo"></a>
+      </div>
+      <div class="navbar-nav ml-auto" id="icons">
+            <i class="fas fa-user" id="user"></i>
+           <i class="fas fa-shopping-cart"></i>
+      </div>
+  </nav>
+
+  <section class="container-fluid">
+    <div class="row align-items-center" id="container">
+        <div class="col-md-6 text-center">
+            <div class="row justify-content-center justify-content-center">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0 mt-10">
+            <img class="img-responsive" src="./images/product.png" id="product"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+          <div class="row align-items-center justify-content-center">
+              <div class="col-10 col-lg-8 blurb mb-5 mb-md-0 mt-10">
+        <h1 class="" id="h1">Cube Sleep System with Chilipad™ Cool Mesh™</h1>
+          <p>The&nbsp;Cube is our pioneer sleep system. It’s comprised of a reversible hydro-powered mattress pad, thermal regulating control unit(s) and a remote making it perfect for one or two sleepers! Utilizing hydropower (water), this sleep system operates between 55-115°F (13-46°C), helping encourage quality, restorative sleep.<br><br><i>*Compatible with versions 2.0/3.0 of the Chilipad™ Cool Mesh™</i></p>
+        </div>
+      </div>
+      <form class="row align-items-center justify-content-center">
+        <table class="table row align-items-center justify-content-center">
+  <thead>
+    <tr>
+      <h6>Step 1 - Me vs We</h6>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <div class="list-group">
+        <td> <input class="list-group-item list-group-item-action" type="button" value="Me" onclick="ShowAndHide()"></td>
+        <td> <input class ="list-group-item list-group-item-action" type="button" value="We" onclick="ShowAndHide2()"></td>
+        </div>
+    </tr>
+        </form>
+        <form class="row align-items-center justify-content-center">
+          <table class="table row align-items-center justify-content-center">
+    <thead>
+      <tr>
+        <h6>Step 2 - Select Bed Size</h6>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>
+            <div id="Me" style="display:block">
+              <input type="button" value="Half Queen" onclick="ShowAndHide()">
+              <input type="button" value="Half King" onclick="ShowAndHide()">
+              <input type="button" value="Half Cal King" onclick="ShowAndHide()">
+            </div>
+          </td>
+          <td>
+            <div id="We" style="display:none">
+              <input type="button" value="Queen" onclick="ShowAndHide2()">
+              <input type="button" value="King" onclick="ShowAndHide2()">
+              <input type="button" value="Cal King" onclick="ShowAndHide2()">
+            </div>
+          </td>
+      </tr>
+  </section>
+  <script>
+    /*
+var Me = document.getElementById('Me');
+var We = document.getElementById('We');
+
+Me.onclick = function () {
+      Me.style.display = 'block';
+      We.style.display = 'none';
+    };
+
+We.onclick = function () {
+        Me.style.display = 'none';
+        We.style.display = 'block';
+      };
+    */
+function ShowAndHide() {
+  var x = document.getElementById('Me');
+  if (x.style.display == 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+};
+
+function ShowAndHide2() {
+  var x = document.getElementById('We');
+  if (x.style.display == 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+};
+    </script>
+  </body>
+</html>
