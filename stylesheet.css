@@ -88,3 +88,7 @@ p {
   font-size: 14px;
   font-family: 'poppins';
 }
+
+.active {
+  background-color: #F00;
+}

@@ -72,8 +72,8 @@
   <tbody>
     <tr>
       <div class="list-group">
-        <td> <input class="list-group-item list-group-item-action" type="button" value="Me" onclick="ShowAndHide()"></td>
-        <td> <input class ="list-group-item list-group-item-action" type="button" value="We" onclick="ShowAndHide2()"></td>
+        <td> <input class="btn btn-default toggle-btn" type="button" value="Me" onclick="ShowAndHide()"></td>
+        <td> <input class ="btn btn-default toggle-btn" type="button" value="We" onclick="ShowAndHide2()"></td>
         </div>
     </tr>
         </form>
@@ -103,37 +103,30 @@
       </tr>
   </section>
   <script>
-    /*
-var Me = document.getElementById('Me');
-var We = document.getElementById('We');
-
-Me.onclick = function () {
-      Me.style.display = 'block';
-      We.style.display = 'none';
-    };
-
-We.onclick = function () {
-        Me.style.display = 'none';
-        We.style.display = 'block';
-      };
-    */
+    document.addEventListener('DOMContentLoaded', function () {
+      let btns = document.getElementsByClassName('toggle-btn');
+      for (const btn of btns) {
+        btn.onclick = function () {
+          btn.classList.toggle('active');
+        };
+      }
+    });
 function ShowAndHide() {
-  var x = document.getElementById('Me');
-  if (x.style.display == 'none') {
-    x.style.display = 'block';
-  } else {
-    x.style.display = 'none';
-  }
+  var x = document.getElementById('We');
+  var y = document.getElementById('Me');
+
+  x.style.display = 'none';
+  y.style.display = 'block';
 };
 
 function ShowAndHide2() {
-  var x = document.getElementById('We');
-  if (x.style.display == 'none') {
-    x.style.display = 'block';
-  } else {
-    x.style.display = 'none';
-  }
+  var y = document.getElementById('We');
+  var x = document.getElementById('Me');
+
+  x.style.display = 'none';
+  y.style.display = 'block';
 };
+
     </script>
   </body>
 </html>
