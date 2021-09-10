@@ -72,8 +72,8 @@
   <tbody>
     <tr>
       <div class="list-group">
-        <td> <input class="btn btn-default toggle-btn" type="button" value="Me" onclick="ShowAndHide()"></td>
-        <td> <input class ="btn btn-default toggle-btn" type="button" value="We" onclick="ShowAndHide2()"></td>
+        <td> <input class="btn btn-outline-dark" type="button" value="Me" onclick="ShowAndHide()"></td>
+        <td> <input class ="btn btn-outline-dark" type="button" value="We" onclick="ShowAndHide2()"></td>
         </div>
     </tr>
         </form>
@@ -103,7 +103,8 @@
       </tr>
   </section>
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    /*
+document.addEventListener('DOMContentLoaded', function () {
       let btns = document.getElementsByClassName('toggle-btn');
       for (const btn of btns) {
         btn.onclick = function () {
@@ -111,6 +112,7 @@
         };
       }
     });
+  */
 function ShowAndHide() {
   var x = document.getElementById('We');
   var y = document.getElementById('Me');

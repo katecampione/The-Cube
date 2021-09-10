@@ -89,6 +89,10 @@ p {
   font-family: 'poppins';
 }
 
-.active {
-  background-color: #F00;
+.btn:focus {
+  background-color: #A9A9A9;
+}
+
+.btn{
+  border: solid 1px black;
 }
