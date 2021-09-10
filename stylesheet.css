@@ -21,10 +21,6 @@
   line-height:16.1px;
 }
 
-#nav-item{
-color: green;
-}
-
 .nav-item {
   padding: 20px;
 }
@@ -50,6 +46,7 @@ color: green;
 i {
   padding: 10px;
 }
+
 #background {
   background-color: #f7f7fa;
   color: black;
@@ -95,4 +92,14 @@ p {
 
 .btn{
   border: solid 1px black;
+}
+
+#add:focus {
+  background-color: #ADD8E6;
+}
+
+@media (max-width: 732px) {
+    #cart {
+      display: none;
+    }
 }

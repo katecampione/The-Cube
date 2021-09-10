@@ -42,22 +42,22 @@
       </div>
       <div class="navbar-nav ml-auto" id="icons">
             <i class="fas fa-user" id="user"></i>
-           <i class="fas fa-shopping-cart"></i>
+           <i class="fas fa-shopping-cart" id="cart"></i>
       </div>
   </nav>
 
   <section class="container-fluid">
     <div class="row align-items-center" id="container">
-        <div class="col-md-6 text-center">
+        <div class="col-md-6 ">
             <div class="row justify-content-center justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0 mt-10">
+                <div class="col-10 col-lg-8 ">
             <img class="img-responsive" src="./images/product.png" id="product"/>
           </div>
         </div>
       </div>
       <div class="col-md-6">
           <div class="row align-items-center justify-content-center">
-              <div class="col-10 col-lg-8 blurb mb-5 mb-md-0 mt-10">
+              <div class="col-10 col-lg-8">
         <h1 class="" id="h1">Cube Sleep System with Chilipad™ Cool Mesh™</h1>
           <p>The&nbsp;Cube is our pioneer sleep system. It’s comprised of a reversible hydro-powered mattress pad, thermal regulating control unit(s) and a remote making it perfect for one or two sleepers! Utilizing hydropower (water), this sleep system operates between 55-115°F (13-46°C), helping encourage quality, restorative sleep.<br><br><i>*Compatible with versions 2.0/3.0 of the Chilipad™ Cool Mesh™</i></p>
         </div>
@@ -85,7 +85,6 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
           <td>
             <div id="Me" style="display:block">
               <input type="button" value="Half Queen" onclick="ShowAndHide()">
@@ -100,19 +99,12 @@
               <input type="button" value="Cal King" onclick="ShowAndHide2()">
             </div>
           </td>
+      <tr class="row align-items-center justify-content-center">
+          <td> <input class="btn btn-primary btn-lg" type="button" value="Add To Cart" id="add"></td>
       </tr>
+      </form>
   </section>
   <script>
-    /*
-document.addEventListener('DOMContentLoaded', function () {
-      let btns = document.getElementsByClassName('toggle-btn');
-      for (const btn of btns) {
-        btn.onclick = function () {
-          btn.classList.toggle('active');
-        };
-      }
-    });
-  */
 function ShowAndHide() {
   var x = document.getElementById('We');
   var y = document.getElementById('Me');
@@ -129,6 +121,6 @@ function ShowAndHide2() {
   y.style.display = 'block';
 };
 
-    </script>
+  </script>
   </body>
 </html>
